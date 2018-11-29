@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/jquery-3.3.1.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/myjs.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/divtable.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <h2>محاسبه سود و ضرر مرحله به مرحله بر مبنای مبلغ اولیه و ضریب تعیین شده </h2>
+            <br/>
+        </div>
+
+        <div class="row">
+            <form class="form-inline" method="dialog">
+                <div class="form-group">
+                    <label class="control-label" for="InitialBet">مبلغ شروع :</label>
+                    <input type="text" class="form-control" style="width: 100px; background-color: white;" id="InitialBet" placeholder="به تومان ...">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="Index" style="padding-left: 20px;">ضریب :</label>
+                    <input type="text" class="form-control" style="width: 60px; background-color: white;" id="Index" placeholder="ضریب..." value="3.00">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="Index" style="padding-left: 20px;">تعداد مراحل باخت :</label>
+                    <input type="text" class="form-control" style="width: 45px; background-color: white;" id="Level" placeholder="تعداد مراحل..."
+                        value="20">
+                </div>
+
+                <div class="radio" style="padding-left: 50px;">
+                    <label>
+                        <input type="radio" name="InterestRadio" checked> سرمایه :
+                    </label>
+                    <input type="text" class="form-control" style="width: 150px; background-color: white;" id="Interest" placeholder="مبلغ سرمایه..."
+                        value="33674">
+                </div>
+                <div class="radio" style="padding-left: 20px;">
+                    <label>
+                        <input type="radio" name="InterestRadio"> نشون بده چقدر سرمایه نیاز دارم</label>
+                </div>
+
+                <div class="form-group" style="padding-left: 20px;">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-primary" onclick="Calculate()">محاسبه</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="divTable">
+                    <div class="headRow">
+                        <div class="divCell" style="background-color:darkgrey">مرحله</div>
+                        <div class="divCell" style="background-color:darkgrey">مبلغ</div>
+                        <div class="divCell" style="background-color:darkgrey">ضریب</div>
+                        <div class="divCell" style="background-color:darkgrey">سود</div>
+                        <div class="divCell" style="background-color:darkgrey">ضرر</div>
+                        <div class="divCell" style="background-color:darkgrey">جمع ضررها</div>
+                        <div class="divCell" style="background-color:darkgrey">مانده سرمایه</div>
+                    </div>
+                    <div class="divRow">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
