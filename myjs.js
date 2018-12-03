@@ -37,6 +37,9 @@ function Calculate() {
 }
 
 function DisplayInDivTable(level, bet, index, profit, loose, loosesSum, remainInterest) {
+    
+    //ClearDivTable();
+
     var colorOfBet;
     var colorOfInterest = "green";
     var burst = 0;
@@ -57,4 +60,13 @@ function DisplayInDivTable(level, bet, index, profit, loose, loosesSum, remainIn
                 <div class='divCell' style= 'color: " + colorOfInterest + "'>" + remainInterest + "</div>\
             </div>";
     $(x).insertBefore(firstDiv);
+}
+
+function ClearDivTable() {
+    var rowCounts = document.getElementsByClassName("divRow").length;
+    var i = 2;
+    while (i < rowCounts) {
+        document.getElementsByClassName("divRow")[i].remove();
+        i++;
+    }
 }

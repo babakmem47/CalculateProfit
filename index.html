@@ -24,33 +24,41 @@
 
         <div class="row" style="text-align: center;">
             <h2>محاسبه سود و ضرر مرحله به مرحله بر مبنای مبلغ اولیه و ضریب تعیین شده </h2>
-            <br/>
+            <br />
         </div>
 
         <div class="row">
             <form class="form-inline" method="dialog">
                 <div class="form-group">
-                    <label class="control-label" for="InitialBet">مبلغ شروع :</label>
-                    <input type="text" class="form-control" style="width: 100px; background-color: white;" id="InitialBet" placeholder="به تومان ...">
+                    <label class="control-label" for="InitialBet">مبلغ مورد نظر برای سود هر مرحله :</label>
+                    <input type="text" class="form-control" style="width: 100px; background-color: white;" id="WantedProfit"
+                        placeholder="به تومان ...">
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label" for="InitialBet" style="padding-left: 20px;">مبلغ شروع :</label>
+                    <input type="text" class="form-control" style="width: 100px; background-color: white;" id="InitialBet"
+                        placeholder="به تومان ...">
                 </div>
 
                 <div class="form-group">
                     <label class="control-label" for="Index" style="padding-left: 20px;">ضریب :</label>
-                    <input type="text" class="form-control" style="width: 60px; background-color: white;" id="Index" placeholder="ضریب..." value="3.00">
+                    <input type="text" class="form-control" style="width: 60px; background-color: white;" id="Index"
+                        placeholder="ضریب..." value="3.00">
                 </div>
 
                 <div class="form-group">
                     <label class="control-label" for="Index" style="padding-left: 20px;">تعداد مراحل باخت :</label>
-                    <input type="text" class="form-control" style="width: 45px; background-color: white;" id="Level" placeholder="تعداد مراحل..."
-                        value="20">
+                    <input type="text" class="form-control" style="width: 45px; background-color: white;" id="Level"
+                        placeholder="تعداد مراحل..." value="20">
                 </div>
 
                 <div class="radio" style="padding-left: 50px;">
                     <label>
                         <input type="radio" name="InterestRadio" checked> سرمایه :
                     </label>
-                    <input type="text" class="form-control" style="width: 150px; background-color: white;" id="Interest" placeholder="مبلغ سرمایه..."
-                        value="33674">
+                    <input type="text" class="form-control" style="width: 150px; background-color: white;" id="Interest"
+                        placeholder="مبلغ سرمایه..." value="33674">
                 </div>
                 <div class="radio" style="padding-left: 20px;">
                     <label>
